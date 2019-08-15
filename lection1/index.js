@@ -8,10 +8,10 @@ function fn (number) {
 
 fn (12);
 
-fn2 (a,b) {
-a = a+b;
-b = a-b;
-b = a-b;
+function fn2 (a,b) {
+a = a+b;//5
+b = a-b;//2
+a = a-b;//3
 console.log(a,b);
 }
 
