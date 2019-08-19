@@ -43,4 +43,5 @@ let findFibSeq = (sum) => {
     }
 }
 
+
 console.log(findFibSeq(21));

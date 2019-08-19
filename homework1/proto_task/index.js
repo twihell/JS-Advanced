@@ -25,3 +25,4 @@ sameUser.__proto__ = yetSameUser;
 console.log(user.name);
 console.log(user.age);
 console.log(user.bornDate);
+
