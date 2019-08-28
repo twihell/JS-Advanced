@@ -55,4 +55,4 @@ function greetFn(salute) {
 const greet = greetFn("Hello,");
 
 console.log(greet("Alex")); //Hello, Alex
-console.log(greet("Max"));
+console.log(greet("Max")); //Hello, Max
