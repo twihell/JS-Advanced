@@ -1,0 +1,45 @@
+section {
+    border: 2px solid skyblue;
+    margin: 0 auto;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+input {
+    font-size: 20px;
+    border: 1px slid orange;
+    margin: 10px;
+}
+
+button{
+    padding: 2px;
+    width: 100px;
+    margin: 0 auto;
+    font-size: 18px;
+    border: 1px solid orange;
+    cursor: pointer;
+    outline: none;
+}
+
+button:hover {
+    background-color: orange;
+}
+
+ul {
+    width: 200px;
+    margin: 0 auto;
+}
+
+h4 {
+    text-align: center;
+}
+
+.extraBtn {
+    flex-direction: row;
+    position: relative;
+    text-align: center;
+    top: 10px;
+    right: 19px;
+}
