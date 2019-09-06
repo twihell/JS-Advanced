@@ -6,11 +6,7 @@ const priorityBtn = document.getElementsByClassName('priorityBtn')[0];
 
 
 priorityBtn.addEventListener('click', () => {
-    if(!checkBox.checked) {
-        checkBox.checked = true;
-    } else {
-        checkBox.checked = false;
-    }
+    checkBox.checked = !checkBox.checked;
 
 });
 
