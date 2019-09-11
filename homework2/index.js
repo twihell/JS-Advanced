@@ -38,4 +38,4 @@ const calc = new Calculator();
 calc.sum(2, 3); //5
 calc.divide(12, 3); //4
 calc.multiply(3, 3); //9
-calc.subtract(3, 9); //6
+calc.subtract(9, 3); //6

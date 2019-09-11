@@ -41,5 +41,5 @@ function printFruitInfo() {
 
 for (let i=0; i < fruits.length; i++) {
 
-    printFruitInfo.call(fruits[i], fruits[i].name, fruits[i].color);
+    printFruitInfo.call(fruits[i], fruits.name, fruits.color);
 }

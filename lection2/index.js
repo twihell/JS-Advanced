@@ -93,8 +93,9 @@ function Audi(name,color) {
     this.color = color;
 }
 
-Audi.prototype = Object.create(Car.prototype);
 
+Audi.prototype = Object.create(Car.prototype);
+// Audi.prototype = Car.prototype;
 Audi.prototype.constructor = Audi;
 
 const q5 = new Audi('q5','silver');
