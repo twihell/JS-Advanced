@@ -46,95 +46,95 @@ function checkWinner() {
         if (array[0].textContent === 'X' &&
             array[1].textContent === 'X' &&
             array[2].textContent === 'X') {
-            message.style.display = 'grid';
+            message.style.display = 'inline-block';
             message.firstElementChild.textContent = "Player X Won!";
             
         } else if (array[0].textContent === 'O' &&
                    array[1].textContent === 'O' &&
                    array[2].textContent === 'O') {
-            message.style.display = 'grid';
+            message.style.display = 'inline-block';
             message.firstElementChild.textContent = "Player O Won!";
         }
         if (array[3].textContent === 'X' &&
             array[4].textContent === 'X' &&
             array[5].textContent === 'X') {
-            message.style.display = 'grid';
+            message.style.display = 'inline-block';
             message.firstElementChild.textContent = "Player X Won!";
         } else if (array[3].textContent === 'O' &&
                    array[4].textContent === 'O' &&
                    array[5].textContent === 'O') {
-            message.style.display = 'grid';
+            message.style.display = 'inline-block';
             message.firstElementChild.textContent = "Player O Won!";
         }
         if (array[6].textContent === 'X' &&
             array[7].textContent === 'X' &&
             array[8].textContent === 'X') {
-            message.style.display = 'grid';
+            message.style.display = 'inline-block';
             message.firstElementChild.textContent = "Player X Won!";
         } else if (array[6].textContent === 'O' &&
                    array[7].textContent === 'O' &&
                    array[8].textContent === 'O') {
-            message.style.display = 'grid';
+            message.style.display = 'inline-block';
             message.firstElementChild.textContent = "Player O Won!";
         }
 
         if (array[0].textContent === 'X' &&
             array[4].textContent === 'X' &&
             array[8].textContent === 'X') {
-            message.style.display = 'grid';
+            message.style.display = 'inline-block';
             message.firstElementChild.textContent = "Player X Won!";
         } else if (array[0].textContent === 'O' &&
                    array[4].textContent === 'O' &&
                    array[8].textContent === 'O') {
-            message.style.display = 'grid';
+            message.style.display = 'inline-block';
             message.firstElementChild.textContent = "Player O Won!";
         }
 
         if (array[2].textContent === 'X' &&
             array[4].textContent === 'X' &&
             array[6].textContent === 'X') {
-            message.style.display = 'grid';
+            message.style.display = 'inline-block';
             message.firstElementChild.textContent = "Player X Won!";
         } else if (array[2].textContent === 'O' &&
                    array[4].textContent === 'O' &&
                    array[6].textContent === 'O') {
-            message.style.display = 'grid';
+            message.style.display = 'inline-block';
             message.firstElementChild.textContent = "Player O Won!";
         }
 
         if (array[0].textContent === 'X' &&
             array[3].textContent === 'X' &&
             array[6].textContent === 'X') {
-            message.style.display = 'grid';
+            message.style.display = 'inline-block';
             message.firstElementChild.textContent = "Player X Won!";
         } else if (array[0].textContent === 'O' &&
                    array[3].textContent === 'O' &&
                    array[6].textContent === 'O') {
-            message.style.display = 'grid';
+            message.style.display = 'inline-block';
             message.firstElementChild.textContent = "Player O Won!";
         }
 
         if (array[1].textContent === 'X' &&
             array[4].textContent === 'X' &&
             array[7].textContent === 'X') {
-            message.style.display = 'grid';
+            message.style.display = 'inline-block';
             message.firstElementChild.textContent = "Player X Won!";
         } else if (array[1].textContent === 'O' &&
                    array[4].textContent === 'O' &&
                    array[7].textContent === 'O') {
-            message.style.display = 'grid';
+            message.style.display = 'inline-block';
             message.firstElementChild.textContent = "Player O Won!";
         }
         
         if (array[2].textContent === 'X' &&
             array[5].textContent === 'X' &&
             array[8].textContent === 'X') {
-            message.style.display = 'grid';
+            message.style.display = 'inline-block';
             message.firstElementChild.textContent = "Player X Won!";
         } else if (array[2].textContent === 'O' &&
                    array[5].textContent === 'O' &&
                    array[8].textContent === 'O') {
-            message.style.display = 'grid';
+            message.style.display = 'inline-block';
             message.firstElementChild.textContent = "Player O Won!";
         }
 
@@ -142,7 +142,7 @@ function checkWinner() {
             return array[index].textContent;
         }
         if (array.every(boxesFilled)) {
-            message.style.display = 'grid';
+            message.style.display = 'inline-block';
             message.firstElementChild.textContent = "It is Draw!";
         }
     })
@@ -168,6 +168,7 @@ resetButton.addEventListener('click', function () {
     })
     let message = document.getElementById('result');
     message.style.display = null;
+    initialStep = 0;
 })
 
 
