@@ -69,23 +69,45 @@ h2 {
     background-color: lightSkyBlue;
 }
 
-#btnAgain{
-	display: none;
-	margin-top: 30px;
-	padding: 5px;
-	font-size: 40px;
-	color:#fff;
-	border-left: none;
-	border-right: none;
-	border-top: none;
-	border-bottom: 2px solid lightSkyBlue;
-	cursor: pointer;
-	outline: none;
-	background: transparent;
-	transition: all .3s;
+#btnAgain {
+    display: flex;
+    margin-top: 15px;
+    font-size: 20px;
+    color: #fff;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    border-bottom: 2px solid lightSkyBlue;
+    cursor: pointer;
+    outline: none;
+    background: transparent;
+    transition: all .3s;
 }
-#btnAgain:hover{
+
+#btnAgain:hover {
     transform: scale(1.1);
     transition: all .3s;
     border-bottom: 2px solid springgreen;
+}
+
+.warning {
+    background-color: red;
+}
+
+.game-result {
+    display: none;
+    width: 21%;
+    background: #333333;
+    padding: 15px;
+    margin-top: -30px;
+    border: 1.5px solid #fff;
+    border-radius: 4px/5px;
+    background-clip: padding-box;
+    text-align: center;
+}
+
+.game-result p {
+    font-size: 25px;
+    padding: 4px;
+    color: white;
 }
