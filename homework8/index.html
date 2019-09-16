@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>AJAX</title>
+    <style>
+        #avatar {
+
+            width: 200px;
+            height: 200px;
+
+        }
+
+        #container {
+            display: block;
+            text-align: center;
+        }
+
+        .followersAvatars {
+            display: flex;
+            justify-content: space-around;
+
+        }
+
+        #folPic {
+
+            width: 150px;
+            height: 150px;
+        }
+
+        #tree {
+            display: flex;
+            justify-content: space-around;
+        }
+    </style>
+</head>
+
+<body>
+    <section>
+        <input id="searchInput" type="text">
+        <button id="getUserButton">Get User</button>
+        <hr>
+        <article id="container">
+            <h1 id="userName"></h1>
+            <p id="bio"></p>
+            <img id="avatar" src="" alt="">
+            <br>
+            <a href=""></a>
+
+        </article>
+    </section>
+    <figure class="followersAvatars">
+        <h2>5 random followers</h2>
+    </figure>
+
+    <section id="tree">
+        <article id="firstFolFollowers">
+            <h2>first follower followers</h2>
+
+        </article>
+
+        <article id="fifthFolFollowers">
+            <h2>last follower wollowers</h2>
+        </article>
+
+    </section>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
