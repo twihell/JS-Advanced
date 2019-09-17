@@ -33,8 +33,7 @@ const parseData = (object) => {
     avatar.src = object["avatar_url"];
     bio.textContent = object["bio"];
     user.textContent = object["login"];
-    followers.href = object["followers_url"];
-    followers.textContent = "Followers!";
+    
 };
 
 const getUserFollowers = (user) => {
@@ -53,16 +52,17 @@ const getUserFollowers = (user) => {
 const parseFollowers = (arrayOfFollowers) => {
     let selectedFollowers = arrayOfFollowers.slice(0, 5);
     for (i = 0; i < selectedFollowers.length; i++) {
-
         let followerProfile = selectedFollowers[i];
+        let wrapper = document.createElement('figure');
         let img = document.createElement('img');
         let caption = document.createElement('figcaption');
-        folAvatars.appendChild(img);
-        folAvatars.appendChild(caption);
         img.src = followerProfile["avatar_url"];
         img.id = "folPic";
         caption.textContent = followerProfile["login"];
-
+        wrapper.appendChild(img);
+        wrapper.appendChild(caption);
+        folAvatars.appendChild(wrapper);
+        
     }
     return selectedFollowers;
 };
