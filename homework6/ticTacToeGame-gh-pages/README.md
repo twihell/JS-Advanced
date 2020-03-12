@@ -1,4 +1,4 @@
-#TicTacToeGame
+# ticTacToeGame-gh-pages
 
 This is another one-page project I made as an assignment at ITEA school. The aim was to create a Tic Tac Toe game, providing
 it with the original game logic by using JavaScript. The game styling was provided by the teacher so that we could concentrate
